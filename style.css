@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kaisei Tokumin", serif;
+
+}
+
+body{
+    background-color: rgb(4, 87, 15);
+}
+
+header{
+    height: 150px;
+    background: linear-gradient(96deg,rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
+}
+
+
+
+.seta{
+    width: 30px;
+    width: 50px;
+
+    display: flex;
+   
+    
+    margin-left: 150px;
+}
+
+.logo{
+    height: 60px;
+}
+
+img{
+    height: 190px;
+    
+}
+
+
+
+
+.acessivel{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
