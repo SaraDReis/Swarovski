@@ -4,3 +4,74 @@
     box-sizing: border-box;
     font-family: "Kaisei Tokumin", serif;
 }
+/*CARDS*/
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+   align-items: center;
+    background-color: aqua;
+
+    /* justify-content: space-between; */
+
+    width: 100%;
+    max-width:1440px;
+    
+ }
+
+ .card{
+    width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    position: relative;
+
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+ .card p{
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+ }
+
+ 
+ .card span{
+    font-weight: bold;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0 3rem;
+    display: flex;
+ }
+
+ .card small{
+    font-size: 0.8rem;
+    color: #777;
+    display: flex;
+ }
+
+ .coracao{
+    width: 20px;
+    height: 42px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+ }
+
+
+
