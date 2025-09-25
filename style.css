@@ -41,7 +41,7 @@ header {
 
     /* background-color: blueviolet; */
 
-    width: 82%;
+    width: 25%;
     height: 100%;
 }
 
@@ -58,6 +58,7 @@ header {
 header .logo{
     height: 60px;
     cursor: pointer;
+    justify-self: center;
 }
 
  .conteudo_cabeçalho img {
@@ -217,6 +218,20 @@ footer .logo{
 
 /* MEDIA */
 
-@media screen {
+@media screen and (max-width: 1000px) {
+    input[type="text"]::placeholder,
+textarea::placeholder {
+    font-size: 20px;
+}
+    
+}
+
+@media screen and (max-width:768px){
+    .box_cadastro, .container_cadastro{
+    
+        flex-direction: column;
+
+    }
+
     
 }
