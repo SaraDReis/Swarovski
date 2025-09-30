@@ -1,12 +1,14 @@
 * {
     padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: "Julius Sans One", sans-serif;
 
 }
 
 
+body{
+    margin: 0;
+}
 
 
 
@@ -77,26 +79,23 @@ img {
     white-space: nowrap;
 }
 
-/* LISTAGEM JOIAS */
-
+/*LISTAGEM*/
 
 .container_lista {
     width: 100%;
     text-align: center;
-    background: #01476B
+    background: #01476B;
 }
 
-p {
-    font-family: "Kaisei Tokumin", serif;
-}
-
-
-
-.container_lista h1 {
+.container_lista h2 {
     background-color: #ffffff;
     padding: 40px 0;
 }
 
+
+
+
+/* CARDS */
 .cards {
     padding-top: 100px;
     width: 100%;
@@ -119,9 +118,13 @@ p {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 1px;
-    
+
     margin-bottom: 90px;
-    box-shadow: 0 4px 4px 2px #00000025
+    box-shadow: 0 4px 4px 2px #00000025;
+}
+
+p {
+    font-family: "Kaisei Tokumin", serif;
 }
 
 .cards svg {
@@ -131,6 +134,13 @@ p {
 
 }
 
+
+.descrição {
+    color: #525252;
+}
+
+
+/* RODAPE */
 footer {
     display: flex;
     justify-content: center;
@@ -139,7 +149,7 @@ footer {
     height: 150px;
 
     background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
-
+    
 }
 
 footer .logo {
@@ -148,4 +158,30 @@ footer .logo {
 
 
 /* MEDIA */
-@media screen and
+@media screen and (max-width:768px) {
+
+    /* header */
+    img {
+
+        height: 150px;
+    }
+
+    .logo {
+
+        height: 100px;
+    }
+
+    .container_lista {
+        border-radius: 30px;
+        width: 90%;
+    }
+
+
+    main {
+        justify-items: center;
+        margin-bottom: 30px;
+    }
+
+    
+
+}
