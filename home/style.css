@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Bellota", system-ui;
+
 }
 
 .acessivel {
@@ -17,10 +17,70 @@
 body {
     background-color: #F1F3EF;
     margin: 0;
-    font-family: sans-serif; /*ALTERAR A FONTE*/
-    background-color: #fff;
-    color: #333;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #F1F3EF;
+    color: #ffffff;
     overflow-x: hidden;
+}
+
+.conteudo_principal {
+    display: flex;
+    /* Permite a navegação lateral e o conteúdo ficarem lado a lado */
+    min-height: 100vh;
+}
+
+/* Navegação Lateral */
+
+.conteudo {
+    width: 250px;
+    padding: 20px 0;
+    border-right: 1px solid #eee;
+    /* Divisória sutil */
+    flex-shrink: 0;
+    /* Impede que a barra lateral diminua */
+    position: sticky;
+    /* Para manter o menu fixo,*/
+    top: 0;
+    align-self: flex-start;
+    /* Fixa no topo */
+}
+
+.menu_lateral {
+    list-style: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+.menu_lateral ul {
+    list-style-type: none;
+
+}
+
+
+.menu_lateral li a {
+    display: block;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.95em;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    transition: background-color 0.2s;
+}
+
+.menu_lateral li a:hover {
+    background-color: #f5f5f5;
+}
+
+.lista_vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
 }
 
 .container {
@@ -51,96 +111,16 @@ body {
     width: 16%;
     justify-content: space-between;
     align-items: center;
-    background-color: aquamarine;
+    background: linear-gradient(180deg, rgba(0, 37, 55, 1) 50%, rgba(0, 71, 107, 1) 100%);
 }
-
-/* Itens do Menu */
-.menu_lateral {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu_lateral li a {
-    display: block;
-    padding: 10px 40px;
- /* Padding ajustado para alinhamento */
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 0.95em;
-    letter-spacing: 1px;
-    transition: background-color 0.2s;
-}
-
-.menu_lateral li a:hover {
-    background-color: #f5f5f5;
-}
-
-
-/* Conteúdo Principal */
-.main_home {
-    flex-grow: 1;
-    padding-top: 20px;
-    padding-left: 20px; 
-}
-
-.secao_logo {
-    display: flex;
-    gap: 15px; 
-/* Espaço entre o banner principal e os menores */
-    padding-right: 20px; 
-/* Espaçamento da margem direita */
-}
-
-
-/* Itens do Menu */
-.menu_lateral {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu_lateral li a {
-    display: block;
-    padding: 10px 40px;
- /* Padding ajustado para alinhamento */
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    font-size: 0.95em;
-    letter-spacing: 1px;
-    transition: background-color 0.2s;
-}
-
-.menu_lateral li a:hover {
-    background-color: #f5f5f5;
-}
-
-
-
 
 /* conteudo principal */
-.main_home {
-    flex-grow: 1;
-    padding-top: 20px;
-    padding-left: 20px; 
-}
-
-.secao_logo {
-    display: flex;
-    gap: 15px; 
-/* Espaço entre o banner principal e os menores */
-    padding-right: 20px; 
-/* Espaçamento da margem direita */
-}
-
 .conteudo {
     width: 70%;
     display: flex;
     flex-direction: column;
-    margin-top: 200px;
-    
+    margin: 50px 0;
+
 }
 
 .card1 {
@@ -175,7 +155,8 @@ body {
 
 .cards {
     display: flex;
-    gap: 5%; /* Espaço entre os dois cards menores */
+    gap: 5%;
+    /* Espaço entre os dois cards menores */
 
 }
 
@@ -184,7 +165,7 @@ body {
     width: 40%;
 }
 
-.card2 img{
+.card2 img {
     width: 100%;
 }
 
@@ -196,7 +177,7 @@ body {
     /* Cor de logo para a imagem */
 }
 
-.card3 img{
+.card3 img {
     width: 100%;
 }
 
@@ -206,14 +187,15 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    background-color: #ccc; /* Cor de logo para a imagem */
+    background-color: #ccc;
+    /* Cor de logo para a imagem */
 }
 
 
 .secao_logo svg {
     width: 240px;
     margin-top: 50px;
-    height: 60px;
+    height: 30px;
     display: flex;
 }
 
@@ -221,29 +203,42 @@ body {
     width: 300px;
 }
 
-/* CADASTRO */
-
-.cadastro {
-    background-color: #004d9c; /* Azul escuro do layout */
-    color: #fff;
-    text-align: center;
-    padding: 15px 0;
-    margin-top: 80px; /* Espaço para separar dos banners e do 'logoo' */
-    font-size: 1.1em;
-    letter-spacing: 0.5px;
+.icones {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 
-.cadastro p {
-    margin: 0;
+/* RODAPE */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+
+    background: #01476B
 }
 
-.cadastro strong {
-    font-weight: bold;
+footer .logo {
+    height: 40px;
 }
 
- /* Media Query para telas menores (para responsividade)  */
+p {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
-@media (max-width: 1024px) {
+.like svg {
+    height: 30px;
+}
+
+
+/* Media para telas menores (para responsividade)  */
+
+@media (max-width: 768px) {
     .menu_lateral {
         width: 180px;
     }
@@ -251,8 +246,9 @@ body {
     .secao_logo {
         flex-direction: column;
         padding-right: 0;
+        display: none;
     }
-    
+
     .conteudo {
         min-width: auto;
     }
