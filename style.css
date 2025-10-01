@@ -161,7 +161,7 @@ textarea {
 
 input,
 textarea {
-    font-size: 25px;
+    font-size: 20px;
     background-color: #F5F5F5;
 }
 
@@ -215,15 +215,17 @@ input[type="button"] {
 @media screen and (max-width: 1000px) {
 
     /* HEADER MEDIA */
-    .seta {
-        display: none;
-    }
 
     .titulo_cadastro {
         display: flex;
         align-items: center;
         justify-content: center;
     }
+
+    .seta {
+        display: none;
+    }
+
 
     .seta_cadastro {
         display: block;
@@ -232,17 +234,26 @@ input[type="button"] {
         margin-right: 30px;
     }
 
+
+
     /* CADASTRO MEDIA */
+
+     label {
+        font-size: 20px;
+    }
+
     input[type="text"]::placeholder,
     textarea::placeholder {
         font-size: 15px;
     }
 
-    label {
-        font-size: 20px;
+    input,
+    textarea {
+        font-size: 15px;
     }
-
 }
+
+
 
 @media screen and (max-width:768px) {
 
@@ -261,7 +272,7 @@ input[type="button"] {
 
     .seta_cadastro {
         width: 20px;
-        
+
     }
 
 
@@ -280,8 +291,6 @@ input[type="button"] {
     .container_cadastro {
         display: flex;
         justify-content: center;
-
-
     }
 
     .coluna_cadastro1,
@@ -299,7 +308,6 @@ input[type="button"] {
     }
 
     textarea {
-
         height: 200px;
 
     }
@@ -317,12 +325,12 @@ input[type="button"] {
 
 
     }
-
 }
 
 @media screen and (max-width:500px) {
 
     /* HEADER MEDIA */
+
     header .logo {
         height: 20px;
     }
