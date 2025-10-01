@@ -74,6 +74,7 @@ img{
     height: 300px;
 }
 
+
 .cards{
     display: flex;
     flex-wrap: wrap;
@@ -133,6 +134,7 @@ img{
  }
 
  .coracao{
+  margin-right: 10px;
     width: 20px;
     height: 42px;
     border-radius: 10px;
@@ -212,6 +214,7 @@ img{
         padding: 0 20px;
 
     }
+    
     .card{
       width: 320px;
       height: 350px;
@@ -255,6 +258,7 @@ img{
     }
 
     .coracao{
+      margin-right: 10px;
       width: 20px;
       height: 42px;
       border-radius: 10px;
