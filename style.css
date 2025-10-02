@@ -6,7 +6,7 @@
 }
 
 
-body{
+body {
     margin: 0;
 }
 
@@ -81,14 +81,20 @@ img {
 
 /*LISTAGEM*/
 
+h2 {
+    justify-self: center;
+}
+
+
 .container_lista {
     width: 100%;
     text-align: center;
     background: #01476B;
+    justify-self: center;
 }
 
 .container_lista h2 {
-    background-color: #ffffff;
+    background-color: #F1F3EF;
     padding: 40px 0;
 }
 
@@ -99,7 +105,7 @@ img {
 .cards {
     padding-top: 100px;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1440px;
     display: flex;
     flex-wrap: wrap;
     gap: 10%;
@@ -149,7 +155,7 @@ footer {
     height: 150px;
 
     background: linear-gradient(96deg, rgba(0, 37, 55, 1) 0%, rgba(0, 71, 107, 1) 100%);
-    
+
 }
 
 footer .logo {
@@ -158,9 +164,19 @@ footer .logo {
 
 
 /* MEDIA */
-@media screen and (max-width:768px) {
+@media screen and (max-width:770px) {
 
     /* header */
+
+    header {
+        height: 130px;
+    }
+
+    header .logo {
+        height: 30px;
+    }
+
+
     img {
 
         height: 150px;
@@ -174,14 +190,16 @@ footer .logo {
     .container_lista {
         border-radius: 30px;
         width: 90%;
+        padding: 0 15px;
+        margin-bottom: 60px;
     }
 
 
-    main {
-        justify-items: center;
-        margin-bottom: 30px;
+    footer {
+        height: 130px;
     }
 
-    
-
+    footer .logo {
+        height: 30px;
+    }
 }
