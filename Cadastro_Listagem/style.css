@@ -262,6 +262,10 @@ p {
     font-family: "Kaisei Tokumin", serif;
 }
 
+.card p{
+
+    padding: 20px;
+}
 .cards svg {
     cursor: pointer;
     display: flex;
